@@ -57,7 +57,7 @@ export default function HeroSection({ navigateTo }: HeroSectionProps) {
           </div>
 
           <img
-            src="/src/assets/Doggo.png"
+            src="/assets/Doggo.png"
             alt="Hundefrisör Hund"
             className="animate hero__image"
             style={{ animationDelay: "0.48s", height: "auto", maxHeight: "clamp(150px, 40vh, 300px)", width: "auto", flexShrink: 0, objectFit: "contain" }}
