@@ -1,0 +1,74 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5] [cursor=pointer]: Fellwunder & Co.
+      - button "Menü öffnen" [ref=e6] [cursor=pointer]
+  - navigation:
+    - generic: Start
+    - generic: Über mich
+    - generic: Leistungen
+    - generic: Preise
+    - generic: Galerie
+    - generic: Kontakt
+  - generic:
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+    - generic: 🐾
+  - generic [ref=e13]:
+    - paragraph [ref=e14]: Hundesalon & Katzenpflege · Aachen
+    - generic [ref=e15]:
+      - heading "Fellwunder" [level=1] [ref=e16]
+      - img [ref=e17]
+    - paragraph [ref=e19]: ehemals Fellpflege by Oxana
+    - paragraph [ref=e21]: Fellpflege für Hunde & Katzen mit Liebe zum Detail. Professionelle Pflege für alle Felltypen – von der regelmäßigen Grundpflege bis hin zu anspruchsvollen Fällen wie stark verfilztem Fell oder sensiblen Tieren.
+    - paragraph [ref=e22]: Auch schwierige, ängstliche oder unruhige Tiere werden einfühlsam und stressarm behandelt.
+    - generic [ref=e23]:
+      - button "Termin vereinbaren" [ref=e24] [cursor=pointer]
+      - button "Leistungen ansehen" [ref=e25] [cursor=pointer]
+  - contentinfo [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]: © 2026 Fellwunder & Co.
+      - link "Impressum" [ref=e29] [cursor=pointer]:
+        - /url: "#"
+      - link "Datenschutz" [ref=e30] [cursor=pointer]:
+        - /url: "#"

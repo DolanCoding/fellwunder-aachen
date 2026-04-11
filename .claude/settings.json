@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Read(//c/Coding/Hundefrisör/**)",
+      "Bash(npx tsc:*)",
+      "Bash(ls -la src/components/*.tsx)",
+      "mcp__playwright__browser_console_messages",
+      "mcp__playwright__browser_tabs",
+      "mcp__playwright__browser_close",
+      "Bash(npm run:*)"
+    ],
+    "additionalDirectories": [
+      "C:\\Coding\\Hundefrisör\\src\\components"
+    ]
+  }
+}

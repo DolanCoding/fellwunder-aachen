@@ -1,0 +1,38 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5] [cursor=pointer]: Fellwunder & Co.
+      - navigation [ref=e6]:
+        - generic [ref=e7] [cursor=pointer]: Start
+        - generic [ref=e8] [cursor=pointer]: Über mich
+        - generic [ref=e9] [cursor=pointer]: Mein Hund
+        - generic [ref=e10] [cursor=pointer]: Leistungen
+        - generic [ref=e11] [cursor=pointer]: Preise
+        - generic [ref=e12] [cursor=pointer]: Galerie
+        - generic [ref=e13] [cursor=pointer]: Kontakt
+  - navigation:
+    - generic: Start
+    - generic: Über mich
+    - generic: Mein Hund
+    - generic: Leistungen
+    - generic: Preise
+    - generic: Galerie
+    - generic: Kontakt
+  - generic:
+    - img
+  - generic [ref=e17]:
+    - paragraph [ref=e18]: Hundesalon & Katzenpflege · Aachen
+    - heading "Fellwunder" [level=1] [ref=e19]
+    - paragraph [ref=e20]: ehemals Fellpflege by Oxana
+    - paragraph [ref=e22]: Fellpflege für Hunde & Katzen mit Liebe zum Detail. Professionelle Pflege für alle Felltypen – von der regelmäßigen Grundpflege bis hin zu anspruchsvollen Fällen wie stark verfilztem Fell oder sensiblen Tieren.
+    - paragraph [ref=e23]: Auch schwierige, ängstliche oder unruhige Tiere werden einfühlsam und stressarm behandelt.
+    - generic [ref=e24]:
+      - button "Termin vereinbaren" [ref=e25] [cursor=pointer]
+      - button "Leistungen ansehen" [ref=e26] [cursor=pointer]
+  - contentinfo [ref=e27]:
+    - generic [ref=e28]:
+      - generic [ref=e29]: © 2026 Fellwunder & Co.
+      - link "Impressum" [ref=e30] [cursor=pointer]:
+        - /url: "#"
+      - link "Datenschutz" [ref=e31] [cursor=pointer]:
+        - /url: "#"

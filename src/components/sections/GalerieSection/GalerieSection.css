@@ -1,0 +1,104 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   GALERIE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.galerie {
+  background: transparent;
+  align-items: stretch;
+  padding-top: 0;
+}
+.galerie__inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 3rem;
+  height: 100%;
+  margin: 0 auto;
+}
+.galerie__header {
+  flex-shrink: 0;
+  padding-top: calc(var(--header-h) + 1.5rem);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+.galerie__grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4px;
+  min-height: 0;
+  padding-bottom: 1.5rem;
+}
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.gallery-item:first-child {
+  grid-row: span 2;
+}
+.gallery-item__bg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  opacity: 0.35;
+  transition:
+    opacity 0.5s var(--ease-out),
+    transform 0.7s var(--ease-out);
+}
+.gallery-item__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(44, 26, 16, 0.6) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity 0.4s;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.25rem 1.5rem;
+}
+.gallery-item__caption {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #fdf9f5;
+}
+.gallery-item:hover .gallery-item__bg {
+  opacity: 0.65;
+  transform: scale(1.05);
+}
+.gallery-item:hover .gallery-item__overlay {
+  opacity: 1;
+}
+
+.gallery-item:nth-child(1) {
+  background: #b8ddf0;
+}
+.gallery-item:nth-child(2) {
+  background: #c8e8f5;
+}
+.gallery-item:nth-child(3) {
+  background: #a8d4ea;
+}
+.gallery-item:nth-child(4) {
+  background: #ffe4a0;
+}
+.gallery-item:nth-child(5) {
+  background: #fdd08a;
+}
+
+@media (max-width: 860px) {
+  .galerie__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .gallery-item:first-child {
+    grid-row: span 1;
+  }
+}

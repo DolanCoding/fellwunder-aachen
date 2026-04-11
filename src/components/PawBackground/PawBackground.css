@@ -1,0 +1,20 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   PAW BACKGROUND
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.paw-bg {
+  position: fixed;
+  top: var(--header-h);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.paw-bg__paw {
+  position: absolute;
+  line-height: 1;
+  filter: grayscale(60%) brightness(1.2) opacity(0.9);
+  color: #b0d4e3;
+}

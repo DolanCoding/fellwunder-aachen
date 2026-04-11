@@ -1,0 +1,47 @@
+.impressum {
+  background: transparent;
+  padding-top: 2rem;
+}
+
+.impressum .section__inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.impressum__content {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.impressum__content h2 {
+  color: var(--text-primary);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.impressum__content h2:first-of-type {
+  margin-top: 1rem;
+}
+
+.impressum__content p {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.impressum__content a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.impressum__content a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.impressum__content strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}

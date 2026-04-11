@@ -1,0 +1,218 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   LEISTUNGEN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.leistungen {
+  background: transparent;
+  align-items: stretch;
+  padding-top: 0;
+  height: auto;
+  overflow: visible;
+}
+.leistungen .section__inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+}
+.leistungen__header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  align-self: center;
+  width: fit-content;
+}
+.leistungen__header .section__label {
+  justify-content: center;
+}
+.leistungen__header .section__label::before {
+  display: none;
+}
+.leistungen__categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: var(--border);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  width: 100%;
+  align-items: stretch;
+}
+.leistungen-cat:first-child {
+  border-right: 2px solid var(--border);
+}
+.leistungen-cat:nth-child(3) {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  background: var(--bg-card);
+  padding: 0;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  border-top: 2px solid var(--border);
+  overflow: hidden;
+}
+
+.leistungen-cat:nth-child(3) .leistungen-cat__header {
+  grid-column: 1 / -1;
+  padding: 2.5rem 2rem;
+  background: var(--bg-card);
+}
+
+.leistungen-cat:nth-child(3) > * {
+  background: var(--bg-card);
+}
+
+.leistungen-cat:nth-child(3) > .leistungen-cat__subgroup {
+  padding: 2rem;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid var(--border);
+}
+
+.leistungen-cat:nth-child(3) > .leistungen-cat__subgroup:last-child {
+  border-right: none;
+}
+
+.leistungen-cat:nth-child(3) > .leistungen-cat__subgroup:nth-last-child(-n + 4) {
+  border-bottom: none;
+}
+.leistungen-cat {
+  background: var(--bg-card);
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  position: relative;
+  overflow: hidden;
+}
+.leistungen-cat__header {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  background: inherit;
+}
+.leistungen-cat__num {
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  color: var(--text-subtle);
+  margin-bottom: 1.25rem;
+  display: block;
+}
+.leistungen-cat__icon {
+  font-size: 1.8rem;
+  margin-right: 0.65rem;
+  flex-shrink: 0;
+}
+.leistungen-cat__title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--text);
+}
+.leistungen-cat__subtitle {
+  grid-column: 1 / -1;
+  font-size: 0.75rem;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  padding: 0 2rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.leistungen-cat__list {
+  grid-column: 1 / -1;
+  list-style: none;
+  padding: 0 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.leistungen-cat__list li {
+  font-size: 0.845rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.leistungen-cat__list li:last-child {
+  border-bottom: none;
+}
+.leistungen-cat__notes {
+  grid-column: 1 / -1;
+  background: rgba(255, 183, 3, 0.08);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+  margin: 0 2rem 2rem 2rem;
+  margin-top: auto;
+}
+.leistungen-cat__notes-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+.leistungen-cat__notes ul {
+  list-style: none;
+}
+.leistungen-cat__notes ul li {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  padding: 0.15rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+.leistungen-cat__notes ul li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+}
+.leistungen-cat__subgroup {
+  margin-bottom: 1.25rem;
+}
+
+.leistungen-cat:nth-child(3) .leistungen-cat__subgroup {
+  grid-column: auto;
+  grid-row: auto;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.leistungen-cat__subgroup-title {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 900px) {
+  .leistungen__categories {
+    grid-template-columns: 1fr;
+  }
+  .leistungen-cat:nth-child(3) {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+  }
+  .leistungen-cat:nth-child(3) .leistungen-cat__subgroup {
+    margin-bottom: 1.25rem;
+  }
+  .leistungen {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+@media (max-width: 560px) {
+  .leistungen-cat {
+    padding: 2rem 1.25rem;
+  }
+  .leistungen-cat:nth-child(3) > .leistungen-cat__subgroup {
+    padding: 1.5rem 1.25rem;
+  }
+}

@@ -1,0 +1,145 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   HERO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.hero {
+  background: transparent;
+  justify-content: center;
+  text-align: center;
+}
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 60%, rgba(33, 158, 188, 0.09) 0%, transparent 65%),
+    radial-gradient(ellipse 45% 45% at 15% 85%, rgba(251, 133, 0, 0.06) 0%, transparent 55%),
+    radial-gradient(ellipse 35% 40% at 85% 15%, rgba(142, 202, 230, 0.12) 0%, transparent 55%);
+  pointer-events: none;
+}
+.hero__eyebrow {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.75rem;
+}
+.hero__title {
+  font-family: "Bobby Jones", serif;
+  font-size: clamp(2rem, 8vw, 9rem);
+  font-weight: 700;
+  background: linear-gradient(
+    135deg,
+    var(--text) 0%,
+    var(--text) 40%,
+    #2b7fa6 60%,
+    var(--text) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 0.15em;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 4px 8px rgba(26, 95, 122, 0.15),
+    0 8px 16px rgba(26, 95, 122, 0.1),
+    0 0px 20px rgba(255, 183, 3, 0.08);
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.05)) drop-shadow(0 4px 8px rgba(26, 95, 122, 0.15))
+    drop-shadow(0 8px 16px rgba(26, 95, 122, 0.1));
+  letter-spacing: 0.02em;
+  padding: 0 1rem;
+  letter-spacing: 7px;
+}
+.hero__title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.hero__title-underline {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 20px;
+  display: block;
+}
+.hero__divider {
+  width: 56px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 2rem auto;
+}
+.hero__tagline {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: clamp(0.88rem, 1.4vw, 1.05rem);
+  color: var(--text-muted);
+  max-width: 440px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.75;
+}
+.hero__subtitle {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+}
+.hero__services {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem 0.75rem;
+  max-width: 540px;
+  margin: 0 auto 1.5rem;
+}
+.hero__services li {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  padding: 0.25rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+}
+.hero__note {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.82rem;
+  color: var(--text-subtle);
+  max-width: 440px;
+  margin: 0 auto;
+  line-height: 1.65;
+  font-style: italic;
+}
+.hero__ctas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero__tagline,
+  .hero__note {
+    max-width: 100%;
+    margin: 0 0 2rem 0;
+  }
+  .hero__tagline {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    padding: 0 0.5rem;
+  }
+  .hero__tagline {
+    font-size: 0.82rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero__note {
+    font-size: 0.75rem;
+  }
+}

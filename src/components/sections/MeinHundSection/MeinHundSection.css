@@ -1,0 +1,132 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   MEIN HUND
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.mein-hund {
+  background: transparent;
+  align-items: stretch;
+  padding-top: 0;
+}
+.mein-hund .section__inner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  padding-top: calc(var(--header-h) + 2rem);
+  padding-bottom: 2.5rem;
+  margin: 0 auto;
+}
+.mein-hund__grid {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  width: 100%;
+}
+.dog-portrait {
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(300px, 35vw);
+  height: min(300px, 35vw);
+}
+.dog-portrait__ring {
+  position: absolute;
+  inset: -16px;
+  border-radius: 50%;
+  border: 1px solid var(--gold-border);
+  animation: ring-pulse 3.5s ease-in-out infinite;
+}
+.dog-portrait__ring-2 {
+  position: absolute;
+  inset: -32px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 183, 3, 0.10);
+  animation: ring-pulse 3.5s ease-in-out 0.5s infinite;
+}
+@keyframes ring-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.3;
+  }
+}
+.dog-portrait__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(145deg, var(--bg-2), #8ECAE6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(5rem, 10vw, 9rem);
+  border: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
+}
+.mein-hund__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dog-name {
+  font-family: var(--font-serif);
+  font-size: clamp(3.5rem, 5vw, 5rem);
+  color: var(--text);
+  margin-bottom: 0.1em;
+}
+.dog-breed {
+  font-size: 0.68rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 1.5rem;
+}
+.dog-bio {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--text-muted);
+  max-width: 480px;
+  margin-bottom: 2rem;
+}
+.dog-facts {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.dog-fact {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--green-border);
+  border-radius: 100px;
+  font-size: 0.78rem;
+  color: var(--green);
+  background: var(--green-dim);
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+}
+.dog-fact:hover {
+  border-color: var(--green);
+  background: rgba(107, 148, 114, 0.16);
+}
+@media (max-width: 860px) {
+  .mein-hund__grid {
+    flex-direction: column;
+    gap: 2.5rem;
+    text-align: center;
+  }
+  .dog-portrait {
+    width: 200px;
+    height: 200px;
+  }
+  .dog-facts {
+    justify-content: center;
+  }
+}
