@@ -9,7 +9,7 @@ const GRUNDPFLEGE = [
   "Ohrenreinigung",
   "Augenpflege",
   "Trimmen (rassespezifisch)",
-  "Zähne putzen (Hygienepflege)",
+  "Zähne putzen (unterstützende Hygienepflege)",
 ];
 
 const ENTFILZUNG_ITEMS = [
@@ -41,21 +41,12 @@ const ZUSATZ_GROUPS = [
       "Welpen-Eingewöhnung",
       "Senior-Hund-Pflege",
       "Angsthunde / schwierige Tiere",
-      "Fellstruktur-Behandlung",
-    ],
-  },
-  {
-    title: "Optik & Pflegefinish",
-    items: [
+      "Optik & Pflegefinish",
       "Fellglanz-Kur (Conditioner / Pflegebad)",
       "Pfoten ausscheren & formen",
       "Konturen auffrischen zwischen Terminen",
       "Pflegesprays / Entwirrungspflege",
     ],
-  },
-  {
-    title: "Komfort",
-    items: ["Express-Kleinpflege"],
   },
 ];
 
