@@ -14,7 +14,7 @@ export default function KontaktSection() {
         <div className="kontakt__content animate" style={{ animationDelay: "0.25s" }}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', width: '100%', maxWidth: '1000px', margin: '0 auto' }}>
             {/* 2x2 Grid: Phone, Email, Opening Hours, Address */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+            <div className="kontakt__grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
               <div className="kontakt__card">
                 <div className="kontakt__icon"><i className="fab fa-whatsapp" /></div>
                 <div className="kontakt__label">Telefon / WhatsApp</div>

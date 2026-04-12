@@ -57,7 +57,7 @@
 
 .hero__title-underline {
   position: absolute;
-  bottom: 0px;
+  bottom: -5px;
   left: 0;
   right: 0;
   width: 100%;

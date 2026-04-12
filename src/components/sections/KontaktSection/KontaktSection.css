@@ -81,4 +81,9 @@
   .kontakt__card {
     padding: 1.5rem;
   }
+
+  /* Single column layout for the 2x2 grid on mobile */
+  .kontakt__grid {
+    grid-template-columns: 1fr !important;
+  }
 }

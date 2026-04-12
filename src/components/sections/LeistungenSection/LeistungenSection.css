@@ -45,7 +45,7 @@
 .leistungen-cat:nth-child(3) {
   grid-column: span 2;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0;
   background: var(--bg-card);
   padding: 0;
