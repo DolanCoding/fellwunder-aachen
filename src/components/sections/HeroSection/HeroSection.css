@@ -124,7 +124,7 @@
   .hero__tagline,
   .hero__note {
     max-width: 100%;
-    margin: 0 0 2rem 0;
+    margin: 0;
   }
   .hero__tagline {
     margin-bottom: 1.5rem;
