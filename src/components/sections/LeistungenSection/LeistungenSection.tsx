@@ -56,7 +56,7 @@ export default function LeistungenSection() {
       <div className="section__inner">
         <div className="leistungen__header">
           <h2 className="section__title animate" style={{ animationDelay: "0.15s" }}>
-            Was wir für Ihr Tier tun
+            Unsere Leistungen
           </h2>
           <p
             className="section__body leistungen_subtitle animate"
