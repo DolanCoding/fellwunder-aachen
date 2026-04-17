@@ -1,4 +1,4 @@
-import './LeistungenSection.css'
+import "./LeistungenSection.css";
 
 const GRUNDPFLEGE = [
   "Waschen & Föhnen",
@@ -55,14 +55,11 @@ export default function LeistungenSection() {
     <section className="section leistungen">
       <div className="section__inner">
         <div className="leistungen__header">
-          <p className="section__label animate" style={{ animationDelay: "0.05s" }}>
-            Leistungen
-          </p>
           <h2 className="section__title animate" style={{ animationDelay: "0.15s" }}>
             Was wir für Ihr Tier tun
           </h2>
           <p
-            className="section__body animate"
+            className="section__body leistungen_subtitle animate"
             style={{ animationDelay: "0.22s", margin: "0 auto" }}
           >
             Alle Felltypen willkommen – natürliche, gepflegte Schnitte mit Erfahrung für schwierige

@@ -25,7 +25,7 @@ export default function Header({ activeSection, navigateTo, menuOpen, setMenuOpe
             onClick={() => navigateTo("hero")}
             style={{ cursor: "pointer" }}
           >
-            Fellwunder
+            Fellwunder & Co
           </span>
 
           {/* Desktop nav */}

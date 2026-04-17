@@ -15,10 +15,7 @@ export default function HeroSection({ navigateTo }: HeroSectionProps) {
         </p>
 
         <div style={{ position: "relative", display: "inline-block", width: "fit-content" }}>
-          <h1
-            className="hero__title animate"
-            style={{ animationDelay: "0.2s" }}
-          >
+          <h1 className="hero__title animate" style={{ animationDelay: "0.2s" }}>
             Fellwunder
           </h1>
           <svg
@@ -37,22 +34,37 @@ export default function HeroSection({ navigateTo }: HeroSectionProps) {
           </svg>
         </div>
 
-        <p className="hero__subtitle animate" style={{ animationDelay: "0.28s" }}>
-          ehemals Fellpflege by Oxana
-        </p>
-
         <div className="hero__divider animate" style={{ animationDelay: "0.35s" }} />
 
-        <div style={{ display: "flex", gap: "clamp(1rem, 3vw, 2rem)", alignItems: "stretch", justifyContent: "center", flexWrap: "wrap", width: "100%", minHeight: 0 }}>
-          <div style={{ flexBasis: "100%", maxWidth: "440px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: "clamp(1rem, 3vw, 2rem)",
+            alignItems: "stretch",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            width: "100%",
+            minHeight: 0,
+          }}
+        >
+          <div
+            style={{
+              flexBasis: "100%",
+              maxWidth: "440px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
             <p className="hero__tagline animate" style={{ animationDelay: "0.42s" }}>
               Fellpflege für Hunde &amp; Katzen mit Liebe zum Detail. Professionelle Pflege für alle
-              Felltypen – von der regelmäßigen Grundpflege bis hin zu anspruchsvollen Fällen wie stark
-              verfilztem Fell oder sensiblen Tieren.
+              Felltypen – von der regelmäßigen Grundpflege bis hin zu anspruchsvollen Fällen wie
+              stark verfilztem Fell oder sensiblen Tieren.
             </p>
 
             <p className="hero__note animate" style={{ animationDelay: "0.55s" }}>
-              Auch schwierige, ängstliche oder unruhige Tiere werden einfühlsam und stressarm behandelt.
+              Auch schwierige, ängstliche oder unruhige Tiere werden einfühlsam und stressarm
+              behandelt.
             </p>
           </div>
 
@@ -60,7 +72,14 @@ export default function HeroSection({ navigateTo }: HeroSectionProps) {
             src="/Doggo.png"
             alt="Hundefrisör Hund"
             className="animate hero__image"
-            style={{ animationDelay: "0.48s", height: "auto", maxHeight: "clamp(150px, 40vh, 300px)", width: "auto", flexShrink: 0, objectFit: "contain" }}
+            style={{
+              animationDelay: "0.48s",
+              height: "auto",
+              maxHeight: "clamp(150px, 40vh, 300px)",
+              width: "auto",
+              flexShrink: 0,
+              objectFit: "contain",
+            }}
           />
         </div>
 

@@ -107,7 +107,7 @@
   font-size: 0.9rem;
   line-height: 1.9;
   color: var(--text-muted);
-  max-width: 540px;
+  max-width: 540px; 
 }
 .gold-line {
   display: none;

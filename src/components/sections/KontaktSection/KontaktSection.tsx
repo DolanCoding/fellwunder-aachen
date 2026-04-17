@@ -8,18 +8,32 @@ export default function KontaktSection() {
           Kontakt
         </p>
         <h2 className="section__title animate" style={{ animationDelay: "0.15s" }}>
-          Melde dich gerne bei mir
+          Jetzt Termin anfragen
         </h2>
 
         <div className="kontakt__content animate" style={{ animationDelay: "0.25s" }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem', width: '100%', maxWidth: '1000px', margin: '0 auto' }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "2rem",
+              width: "100%",
+              maxWidth: "1000px",
+              margin: "0 auto",
+            }}
+          >
             {/* 2x2 Grid: Phone, Email, Opening Hours, Address */}
-            <div className="kontakt__grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+            <div
+              className="kontakt__grid"
+              style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}
+            >
               <div className="kontakt__card">
-                <div className="kontakt__icon"><i className="fab fa-whatsapp" /></div>
+                <div className="kontakt__icon">
+                  <i className="fab fa-whatsapp" />
+                </div>
                 <div className="kontakt__label">Telefon / WhatsApp</div>
                 <a href="tel:+4915150100352" className="kontakt__link">
-                  0151 / 50100352
+                  01577 / 6730003
                 </a>
               </div>
 
@@ -38,14 +52,19 @@ export default function KontaktSection() {
                   Mo–Fr: 09:00–19:00 Uhr
                   <br />
                   <span
-                    style={{ fontSize: "0.85rem", opacity: 0.8, marginTop: "0.5rem", display: "block" }}
+                    style={{
+                      fontSize: "0.85rem",
+                      opacity: 0.8,
+                      marginTop: "0.5rem",
+                      display: "block",
+                    }}
                   >
                     Termine nur nach Vereinbarung
                   </span>
                 </div>
               </div>
 
-              <div className="kontakt__card" style={{ textAlign: 'center' }}>
+              <div className="kontakt__card" style={{ textAlign: "center" }}>
                 <div className="kontakt__icon">📍</div>
                 <div className="kontakt__label">Adresse</div>
                 <div className="kontakt__text">
@@ -58,7 +77,15 @@ export default function KontaktSection() {
             </div>
 
             {/* Row 3: Google Maps (large) */}
-            <div style={{ borderRadius: '8px', overflow: 'hidden', height: '500px', boxShadow: '0 4px 12px rgba(0,0,0,0.1)', width: '100%' }}>
+            <div
+              style={{
+                borderRadius: "8px",
+                overflow: "hidden",
+                height: "500px",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                width: "100%",
+              }}
+            >
               <iframe
                 width="100%"
                 height="100%"

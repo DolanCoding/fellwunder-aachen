@@ -192,6 +192,11 @@
   margin-bottom: 0.4rem;
 }
 
+.leistungen_subtitle {
+  white-space: nowrap;
+  max-width: unset;
+}
+
 @media (max-width: 900px) {
   .leistungen__categories {
     grid-template-columns: 1fr;
