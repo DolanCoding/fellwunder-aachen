@@ -32,7 +32,7 @@ export default function KontaktSection() {
                   <i className="fab fa-whatsapp" />
                 </div>
                 <div className="kontakt__label">Telefon / WhatsApp</div>
-                <a href="tel:+4915150100352" className="kontakt__link">
+                <a href="tel:+4915776730003" className="kontakt__link">
                   01577 / 6730003
                 </a>
               </div>

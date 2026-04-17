@@ -24,9 +24,9 @@ export default function ImpressumSection() {
 
           <h2>Kontaktinformationen</h2>
           <p>
-            <strong>Telefon:</strong> <a href="tel:+4915150100352">0151 / 50100352</a>
+            <strong>Telefon:</strong> <a href="tel:+4915776730003">01577 / 6730003</a>
             <br />
-            <strong>WhatsApp:</strong> <a href="tel:+4915150100352">0151 / 50100352</a>
+            <strong>WhatsApp:</strong> <a href="tel:+4915776730003">01577 / 6730003</a>
           </p>
 
           <h2>Verantwortlich für den Inhalt</h2>
