@@ -3,51 +3,30 @@ import "./LeistungenSection.css";
 const GRUNDPFLEGE = [
   "Waschen & Föhnen",
   "Schneiden (natürlich & gepflegt)",
-  "Konturenschnitt",
   "Bürsten & Entfilzen",
   "Krallen schneiden",
-  "Ohrenreinigung",
-  "Augenpflege",
+  "Ohren- & Augenpflege",
   "Trimmen (rassespezifisch)",
-  "Zähne putzen (unterstützende Hygienepflege)",
+  "Zahnpflege (unterstützend)",
 ];
 
 const ENTFILZUNG_ITEMS = [
-  "Entfernen von Verfilzungen",
-  "Waschen & Föhnen inklusive",
-  "Pflege und Nachbearbeitung je nach Zustand",
+  "Entfernen von Verfilzungen inkl. Waschen & Föhnen",
+  "Pflege je nach Zustand des Fells",
 ];
 
 const ENTFILZUNG_NOTES = [
-  "Kann mehrere Sitzungen erfordern",
-  "Bei starkem Filz ggf. Teil- oder Komplettschur notwendig",
-  "Entscheidung erfolgt individuell nach Begutachtung",
+  "Mehrere Sitzungen möglich",
+  "Bei stark verfilztem Fell ist meist eine Teil- oder Komplettschur notwendig",
+  "Bei Unterwoll- und Filzbehandlungen ist ein Bad zwingend notwendig",
 ];
 
-const ZUSATZ_GROUPS = [
-  {
-    title: "Hygiene & Pflege",
-    items: [
-      "Pfotenpflege",
-      "Augenpflege intensiv",
-      "Ohrenpflege intensiv",
-      "Geruchsbehandlung / Fellauffrischung",
-      "Unterwoll-Entfernung",
-    ],
-  },
-  {
-    title: "Spezialpflege",
-    items: [
-      "Welpen-Eingewöhnung",
-      "Senior-Hund-Pflege",
-      "Angsthunde / schwierige Tiere",
-      "Optik & Pflegefinish",
-      "Fellglanz-Kur (Conditioner / Pflegebad)",
-      "Pfoten ausscheren & formen",
-      "Konturen auffrischen zwischen Terminen",
-      "Pflegesprays / Entwirrungspflege",
-    ],
-  },
+const ZUSATZ_ITEMS = [
+  "Pfotenpflege",
+  "Unterwoll-Entfernung",
+  "Welpen-Eingewöhnung",
+  "Senioren- & Angsthunde",
+  "Fellpflege & Auffrischung zwischen Terminen",
 ];
 
 export default function LeistungenSection() {
@@ -62,8 +41,7 @@ export default function LeistungenSection() {
             className="section__body leistungen_subtitle animate"
             style={{ animationDelay: "0.22s", margin: "0 auto" }}
           >
-            Alle Felltypen willkommen – natürliche, gepflegte Schnitte mit Erfahrung für schwierige
-            und sensible Tiere.
+            Alle Felltypen willkommen – spezialisiert auf Grundpflege und stark verfilztes Fell.
           </p>
         </div>
 
@@ -109,16 +87,11 @@ export default function LeistungenSection() {
               <span className="leistungen-cat__icon">✂️</span>
               <h3 className="leistungen-cat__title">Zusatzleistungen</h3>
             </div>
-            {ZUSATZ_GROUPS.map((group) => (
-              <div key={group.title} className="leistungen-cat__subgroup">
-                <p className="leistungen-cat__subgroup-title">{group.title}</p>
-                <ul className="leistungen-cat__list">
-                  {group.items.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            <ul className="leistungen-cat__list">
+              {ZUSATZ_ITEMS.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

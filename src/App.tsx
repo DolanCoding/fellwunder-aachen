@@ -32,7 +32,7 @@ export default function App() {
       "name": "Fellwunder & Co.",
       "description": "Professioneller Hundesalon und Katzenpflege in Aachen",
       "image": "https://fellwunder-aachen.de/og-image.png",
-      "telephone": "+4915150100352",
+      "telephone": "+4915776730003",
       "email": "Info@fellwunder-aachen.de",
       "address": {
         "@type": "PostalAddress",
