@@ -57,7 +57,7 @@ export default function HeroSection({ navigateTo }: HeroSectionProps) {
             }}
           >
             <p className="hero__tagline animate" style={{ animationDelay: "0.42s" }}>
-              Fellpflege für Hunde &amp; Katzen mit Liebe zum Detail. Professionelle Pflege für alle
+              Fellpflege für Hunde &amp; Katzen. Professionelle Pflege für alle
               Felltypen – von der regelmäßigen Grundpflege bis hin zu anspruchsvollen Fällen wie
               stark verfilztem Fell oder sensiblen Tieren.
             </p>
