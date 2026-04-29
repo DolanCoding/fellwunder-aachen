@@ -49,8 +49,9 @@ export default function KontaktSection() {
                 <div className="kontakt__icon">🕐</div>
                 <div className="kontakt__label">Öffnungszeiten</div>
                 <div className="kontakt__text">
-                  Mo–Fr: 09:00–19:00 Uhr
+                  Mo–Fr: 10:00–19:00 Uhr
                   <br />
+                  Sa: 10:00-16:00 Uhr
                   <span
                     style={{
                       fontSize: "0.85rem",

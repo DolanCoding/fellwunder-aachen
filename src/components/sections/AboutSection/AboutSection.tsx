@@ -34,9 +34,7 @@ export default function AboutSection() {
 
           {/* Image column */}
           <div className="about__image-wrap animate" style={{ animationDelay: "0.3s" }}>
-            <div className="about__image" aria-hidden="true">
-              🐕
-            </div>
+            <img className="about__image" src="/Michelle.png" alt="Michelle" aria-hidden="true" />
             <div className="about__image-frame" />
           </div>
         </div>
